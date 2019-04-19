@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="styles.css">
+
+<body>
+<div>
+    <input type="text" id="student_id" value="" onkeypress="handleKeyPress(event)" autofocus placeholder="Student ID" size="5">
+    <input type="text" id="student_name" value="" onkeypress="handleKeyPress(event)" autofocus placeholder="Name" size="20">
+    <input type="text" id="student_birth" value="" onkeypress="handleKeyPress(event)" autofocus placeholder="Birthday" size="20">
+    <input type="text" id="student_gpa" value="" onkeypress="handleKeyPress(event)" autofocus placeholder="GPA" size="5">
+    <input type="text" id="student_cre" value="" onkeypress="handleKeyPress(event)" autofocus placeholder="Credit" size="5">
+</div>
+
+<br>
+<button type="button" onclick="createExampleAVLTree();">Example</button>
+<button type="button" onclick="InsertNode();">Insert</button>
+<button type="button" onclick="DeleteNode();">Delete</button>
+<button type="button" onclick="SearchNode();">Search</button>
+<button type="button" onclick="Print(bst.inorder);">Inorder</button>
+<button type="button" onclick="Print(bst.preorder);">Preorder</button>
+<button type="button" onclick="Print(bst.postorder);">Postorder</button>
+<button type="button" onclick="getPredecessor();">Predecessor</button>
+<button type="button" onclick="getSuccessor();">Successor</button>
+<button type="button" onclick="maxNode();">Max Node</button>
+<br>
+<br>
+
+<span id="msg"></span>
+
+<!-- load the d3.js library -->
+<script src="d3.min.js"></script>
+<script src="AVL.js" charset="utf-8"></script>
+<script src="func.js" charset="utf-8"></script>
+
+</body>
